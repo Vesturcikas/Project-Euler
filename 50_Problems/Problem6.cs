@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _50_Problems
+namespace First_50_Problems
 {
     class Problem6
     {
+        /*
         //-----
         //The sum of the squares of the first ten natural numbers is, 1^2 + 2^2 + ... +10^2 = 385
         //The square of the sum of the first ten natural numbers is, (1 + 2 + ... + 10)^2 = 552 = 3025
@@ -26,5 +27,6 @@ namespace _50_Problems
             }
     sum2 = (int) (Math.Pow(sum2, 2));
             Console.WriteLine("The difference between the sum of the squares of the first one hundred natural numbers and the square of the sum: {0}.", sum2-sum1);
+            */
     }
 }

@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _50_Problems
+namespace First_50_Problems
 {
     class Problem3
     {
+        /*
         //-----
         //The prime factors of 13195 are 5, 7, 13 and 29.
         //What is the largest prime factor of the number 600851475143 ?
@@ -50,5 +51,6 @@ namespace _50_Problems
                 }
             }
             Console.WriteLine("Max: "+ primenumbers.Max());
+            */
     }
 }

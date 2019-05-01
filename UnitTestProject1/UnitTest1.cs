@@ -12,5 +12,11 @@ namespace UnitTestProject1
         {
             Assert.AreEqual(Problem1.SumOfDivision3and5(1000), 233168);
         }
+
+        [TestMethod]
+        public void Problem2_ShuldRetrun_4613732()
+        {
+            Assert.AreEqual(Problem2.SumOfEvenFibonacciNumbers(4000000), 4613732);
+        }
     }
 }

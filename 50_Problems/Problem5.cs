@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _50_Problems
+namespace First_50_Problems
 {
     class Problem5
     {
