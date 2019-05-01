@@ -12,7 +12,7 @@ namespace First_50_Problems
         // find the sum of the even-valued terms.
         //-----
 
-        public static long SumOfEvenFibonacciNumbers(long n)
+        public static long SumOfEvenFibonacciNumbers(int n)
         {
             long result = 0;
             if (n<2)
@@ -26,7 +26,7 @@ namespace First_50_Problems
             int n1 = 1;
             int n2 = 2;
             int n3;
-            for (long i = 3; i < n; i++)
+            do
             {
                 n3 = n1 + n2;
                 if (n3 % 2 == 0)
@@ -35,7 +35,7 @@ namespace First_50_Problems
                 }
                 n1 = n2;
                 n2 = n3;
-            }
+            } while (n3 <= n);
             return result;
         }
     }
