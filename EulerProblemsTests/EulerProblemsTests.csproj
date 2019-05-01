@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A1DEF85D-E7ED-4B50-972F-6C7075D161C5}</ProjectGuid>
+    <ProjectGuid>{FF6D80F8-BA95-4278-8DEA-A087745D37C8}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Problem_1</RootNamespace>
-    <AssemblyName>Problem_1</AssemblyName>
+    <RootNamespace>EulerProblemsTests</RootNamespace>
+    <AssemblyName>EulerProblemsTests</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Problem1.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -3,7 +3,7 @@
 
 namespace Problem_1
 {
-    class Program
+    class Problem1
     {
         static void Main(string[] args)
         {
