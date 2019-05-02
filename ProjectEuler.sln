@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Problems", "Problems", "{0D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B0BA9CD3-9DBE-4BC0-979E-EDF8A3F6CA95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{44DDA765-17B9-4DAB-B268-DC1BEC9CF324}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProjectEuler", "UnitTestProject1\UnitTestProjectEuler.csproj", "{44DDA765-17B9-4DAB-B268-DC1BEC9CF324}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

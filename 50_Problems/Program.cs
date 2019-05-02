@@ -1,5 +1,6 @@
 ﻿using First_50_Problems;
 using System;
+using System.Collections.Generic;
 
 namespace First_50_Problems
 {
@@ -31,6 +32,47 @@ namespace First_50_Problems
                         Console.Write("Yuor number: ");
                         int a = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("The sum of the even-valued Fibonacci nambers below {0}: {1}.", a, Problem2.SumOfEvenFibonacciNumbers(a));
+                        break;
+                    }
+                case 3:
+                    {
+                        Console.WriteLine("What is the largest prime factor of the number n ?");
+                        Console.WriteLine();
+                        Console.WriteLine("Enter the number greater than 2.");
+                        Console.Write("Yuor number: ");
+                        int a = Convert.ToInt32(Console.ReadLine());
+                        List<long> PrameFactors = new List<long>();
+                        PrameFactors = Problem3.FindPrimeNumbers(a);
+                        Console.WriteLine("The primes factors of the number {0}:", a);
+                        Console.WriteLine();
+                        int lenght = PrameFactors.Count;
+                        if (lenght == 1)
+                        {
+                            Console.WriteLine("{0}", PrameFactors[0]);
+                        }
+                        else
+                        {
+                            for (int i = 0; i < lenght; i++)
+                            {
+
+                                if (i == 0)
+                                {
+                                    Console.Write("{0}, ", PrameFactors[i]);
+                                }
+                                else if (i == (lenght - 1))
+                                {
+                                    Console.WriteLine("{0}.", PrameFactors[i]);
+                                }
+                                else
+                                {
+                                    Console.Write("{0}, ", PrameFactors[i]);
+                                }
+                            }
+                        }
+                        
+                        Console.WriteLine();
+                        Console.WriteLine("The largest prime factor of the number {0}: {1}.", 
+                            a, Problem3.FindMaxNumber(PrameFactors));
                         break;
                     }
 
