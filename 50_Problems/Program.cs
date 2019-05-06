@@ -40,7 +40,7 @@ namespace First_50_Problems
                         Console.WriteLine();
                         Console.WriteLine("Enter the number greater than 2.");
                         Console.Write("Yuor number: ");
-                        int a = Convert.ToInt32(Console.ReadLine());
+                        long a = Convert.ToInt64(Console.ReadLine());
                         List<long> PrameFactors = new List<long>();
                         PrameFactors = Problem3.FindPrimeNumbers(a);
                         Console.WriteLine("The primes factors of the number {0}:", a);
@@ -69,19 +69,26 @@ namespace First_50_Problems
                                 }
                             }
                         }
-                        
                         Console.WriteLine();
                         Console.WriteLine("The largest prime factor of the number {0}: {1}.", 
                             a, Problem3.FindMaxNumber(PrameFactors));
+                        break;
+                    }
+                case 4:
+                    {
+                        Console.WriteLine("Find the largest palindrome made from the product of two 3 - digit numbers.");
+                        Console.WriteLine();
+                        Console.WriteLine("Enter the number 3.");
+                        Console.Write("Yuor number: ");
+                        int n = Convert.ToInt32(Console.ReadLine());
+                        int largestpalindrome = Problem4.FindLargestPalindrome(n);
+                        Console.WriteLine("The largest palindrome made from the product of two 3 - digit numbers is {0}.", largestpalindrome);
                         break;
                     }
 
                 default:
                     break;
             }
-
-
-
         }
 
     }

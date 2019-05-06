@@ -25,5 +25,11 @@ namespace UnitTestProjectEuler
             List<long> prfact = Problem3.FindPrimeNumbers(600851475143);
             Assert.AreEqual(Problem3.FindMaxNumber(prfact), 6857);
         }
+
+        [TestMethod]
+        public void Problem4_ShuldReturn_906609()
+        {
+            Assert.AreEqual(Problem4.FindLargestPalindrome(3), 906609);
+        }
     }
 }

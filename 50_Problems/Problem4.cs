@@ -6,61 +6,71 @@ using System.Threading.Tasks;
 
 namespace First_50_Problems
 {
-    class Problem4
+    public static class Problem4
     {
-        /*
+        
         //-----
         //A palindromic number reads the same both ways. 
         //The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
         //Find the largest palindrome made from the product of two 3 - digit numbers.
         //-----
 
-        int largestpalindrome = 0;
-        int maxnumber1 = 0;
-        int maxnumber2 = 0;
-            for (int i = 100; i <= 999; i++)
+        public static int FindLargestPalindrome(int n)
+        {
+            int result = 0;
+            int last = 1;
+            switch (n)
+            {
+                case 3:
+                    {
+                        last = 999; break;
+                    }
+                default:
+                    break;
+            }
+            for (int i = 100; i <= last; i++)
             {
                 int number3 = 0;
-                for (int k = i; k <= 999; k++)
+                for (int k = i; k <= last; k++)
                 {
-                    number3 = i* k;
-        int n6 = number3 / 100000;
-        int a = (number3 - n6 * 100000);
-        int n5 = a / 10000;
-        int b = a - n5 * 10000;
-        int n4 = b / 1000;
-        int c = b - n4 * 1000;
-        int n3 = c / 100;
-        int d = c - n3 * 100;
-        int n2 = d / 10;
-        int n1 = d - n2 * 10;
-                    if (n6==0)
+                    number3 = i * k;
+                    if (Problem4.ItPalindromicNumber(number3))
                     {
-                        if (n5==n1 && n4==n2)
+                        if (number3 > result)
                         {
-                            if (largestpalindrome<number3)
-                            {
-                                largestpalindrome = number3;
-                                maxnumber1 = i;
-                                maxnumber2 = k;
-                            }
-}
-                    }
-                    else
-                    {
-                        if (n6==n1 && n5==n2 && n4==n3)
-                        {
-                            if (largestpalindrome<number3)
-                            {
-                            largestpalindrome = number3;
-                            maxnumber1 = i;
-                            maxnumber2 = k;
-                            }
+                            result = number3;
                         }
                     }
                 }
             }
-            Console.WriteLine("The largest palindrome made from the product of two 3 - digit numbers is {0} = {1} x {2} .", largestpalindrome, maxnumber1, maxnumber2);
-            */
+            return result;
+        }
+
+        public static bool ItPalindromicNumber(int n)
+        {
+            bool result = false;
+            int n6 = n / 100000;
+            int n5 = (n - n6 * 100000) / 10000;
+            int n4 = ((n - n6 * 100000) - n5 * 10000) / 1000;
+            int n3 = ((n - n6 * 100000) - n5 * 10000 - n4 * 1000) / 100;
+            int n2 = ((n - n6 * 100000) - n5 * 10000 - n4 * 1000 - n3 * 100) / 10;
+            int n1 = n - n6 * 100000 - n5 * 10000 - n4 * 1000 - n3 * 100 - n2 * 10;
+            if (n6 == 0)
+            {
+                if (n5 == n1 && n4 == n2)
+                {
+                    result = true;
+                }
+            }
+            else
+            {
+                if (n6 == n1 && n5 == n2 && n4 == n3)
+                {
+                    result = true;
+                }
+            }
+            return result;
+        }
+
     }
 }

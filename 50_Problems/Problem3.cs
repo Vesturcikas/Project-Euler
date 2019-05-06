@@ -36,9 +36,5 @@ namespace First_50_Problems
             }
             return result;
         }
-
-
-
-
     }
 }
