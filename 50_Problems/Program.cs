@@ -85,6 +85,17 @@ namespace First_50_Problems
                         Console.WriteLine("The largest palindrome made from the product of two 3 - digit numbers is {0}.", largestpalindrome);
                         break;
                     }
+                case 6:
+                    {
+                        Console.WriteLine("Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.");
+                        Console.WriteLine();
+                        Console.WriteLine("Enter the number greater than 1.");
+                        Console.Write("Yuor number: ");
+                        int n = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("The difference between the sum of the squares of the first one hundred natural numbers and the square of the sum: {0}.", 
+                            Problem6.SquereOfSumNaturalNumbers(n)-Problem6.SumOfSquaresNaturalNumbers(n));
+                        break;
+                    }
 
                 default:
                     break;

@@ -31,5 +31,11 @@ namespace UnitTestProjectEuler
         {
             Assert.AreEqual(Problem4.FindLargestPalindrome(3), 906609);
         }
+
+        [TestMethod]
+        public void Problem6_ShuldReturn_25164150()
+        {
+            Assert.AreEqual(Problem6.SquereOfSumNaturalNumbers(100)-Problem6.SumOfSquaresNaturalNumbers(100), 25164150);
+        }
     }
 }

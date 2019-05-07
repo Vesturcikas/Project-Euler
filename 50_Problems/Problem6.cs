@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace First_50_Problems
 {
-    class Problem6
+    public static class Problem6
     {
-        /*
         //-----
         //The sum of the squares of the first ten natural numbers is, 1^2 + 2^2 + ... +10^2 = 385
         //The square of the sum of the first ten natural numbers is, (1 + 2 + ... + 10)^2 = 552 = 3025
@@ -17,16 +16,21 @@ namespace First_50_Problems
         //Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
         //-----
 
-        int sum1 = 0;
-        int sum2 = 0;
-        Console.WriteLine("Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.");
-            for (int i = 1; i <= 100; i++)
+        public static int SquereOfSumNaturalNumbers (int n)
+        {
+            int result = 0;
+            int sum = n*(n+1)/2;
+            return result = sum * sum;
+        }
+
+        public static int SumOfSquaresNaturalNumbers (int n)
+        {
+            int result2 = 0;
+            for (int i = 1; i <= n; i++)
             {
-                sum1 = sum1 + (int) (Math.Pow(i, 2));
-                sum2 += i;
+                result2 += (int)Math.Pow(i, 2);
             }
-    sum2 = (int) (Math.Pow(sum2, 2));
-            Console.WriteLine("The difference between the sum of the squares of the first one hundred natural numbers and the square of the sum: {0}.", sum2-sum1);
-            */
+            return result2;
+        }
     }
 }
