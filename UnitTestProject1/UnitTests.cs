@@ -37,5 +37,11 @@ namespace UnitTestProjectEuler
         {
             Assert.AreEqual(Problem6.SquereOfSumNaturalNumbers(100)-Problem6.SumOfSquaresNaturalNumbers(100), 25164150);
         }
+
+        [TestMethod]
+        public void Problem7_ShuldReturn_13()
+        {
+            Assert.AreEqual(Problem7.FindPrimeNumberN(6), 13);
+        }
     }
 }

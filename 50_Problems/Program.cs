@@ -96,6 +96,16 @@ namespace First_50_Problems
                             Problem6.SquereOfSumNaturalNumbers(n)-Problem6.SumOfSquaresNaturalNumbers(n));
                         break;
                     }
+                case 7:
+                    {
+                        Console.WriteLine("What is the 10 001st prime number?");
+                        Console.WriteLine();
+                        Console.WriteLine("Enter the number greater than 1.");
+                        Console.Write("Yuor number: ");
+                        int n = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("The {0}st prime number: {1}.", n, Problem7.FindPrimeNumberN(n));
+                        break;
+                    }
 
                 default:
                     break;
